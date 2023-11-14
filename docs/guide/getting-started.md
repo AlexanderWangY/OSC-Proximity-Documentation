@@ -116,7 +116,7 @@ $ nvm install node && nvm use node
 ```
 
 ::: warning
-Did this not work for you? Let one of the tech leads know! Contact us in the [discord](https://discord.gg/CedfucmXbq).
+Did this not work for you? Let one of the tech leads know! [Contact us](/contact).
 :::
 
 ---
@@ -224,7 +224,7 @@ git version xxxxxxx
 
 Then you have succeeded!
 ::: tip Problems?
-Running into issues? Not sure what to do? Contact a tech lead at a casual coding or on the [discord](https://discord.gg/CedfucmXbq).
+Running into issues? Not sure what to do? [Contact us](/contact).
 :::
 
 ### Branching and Cloning the Repository

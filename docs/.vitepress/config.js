@@ -17,7 +17,8 @@ export default {
     themeConfig: {
         nav: [
             { text: 'Guide', link: '/guide/what-is-proximity'},
-            { text: 'About', link: 'about'}
+            { text: 'About', link: 'about'},
+            { text: 'Contacts', link: 'contact'}
         ],
         sidebar: {
             '/guide/': documentation
