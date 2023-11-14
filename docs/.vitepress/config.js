@@ -1,6 +1,14 @@
+
 const documentation = [
-    { text: 'What is OSC Proximity Chat', link: '/guide/what-is-proximity'},
-    { text: 'Getting Started', link: '/guide/getting-started'}
+    { 
+        text: 'Introduction',
+        collapsible: true,
+        items: [
+            { text: 'What is OSC Proximity Chat', link: '/guide/what-is-proximity'},
+            { text: 'Getting Started', link: '/guide/getting-started'},
+            {text: 'Developer Tools', link: '/guide/dev-tools'}
+        ]
+    }
 ]
 
 export default {

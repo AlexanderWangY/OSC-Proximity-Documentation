@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.25"
+    "vitepress": "^1.0.0-rc.25",
+    "vitepress-plugin-tabs": "^0.4.1"
   }
 }
