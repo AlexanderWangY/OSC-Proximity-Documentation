@@ -6,7 +6,7 @@ hero:
   text: Talk to the people closest to you
   tagline: A new app with an innovative take on communication within your community
   image:
-    src: /imgs/logo2.png
+    src: /logo2.png
     alt: Proximity Logo
   actions:
     - theme: brand
