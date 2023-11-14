@@ -13,7 +13,7 @@ const documentation = [
 
 export default {
     title: 'OSC Proximity Chat',
-    logo: 'geoArt.png',
+    logo: '/imgs/cat.jpeg',
     themeConfig: {
         nav: [
             { text: 'Guide', link: '/guide/what-is-proximity'},
