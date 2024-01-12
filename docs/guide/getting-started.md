@@ -314,7 +314,7 @@ Perfect :thumbsup:!
 
 Now we need to configure your environment variables for API calls to the backend server!!!
 
-Locate your `config_example.md` file and open it to edit it. Change the current variable stand-in to your machines current IPv4 address! Here is a quick website on how to find your IPv4 address. [How to find my IP Address on Linux](https://linuxize.com/post/how-to-find-ip-address-linux/).
+Locate your `config_example.md` file and open it to edit it. Change the current variable stand-in to your machines current IPv4 address! Here is a quick website on how to find your IPv4 address. [How to find my IP Address on Windows](https://support.microsoft.com/en-us/windows/find-your-ip-address-in-windows-f21a9bbc-c582-55cd-35e0-73431160a1b9).
 
 Your `config_example.md` should look something like this:
 
