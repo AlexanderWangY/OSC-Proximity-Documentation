@@ -379,4 +379,29 @@ Coming soon!
 
 ## Setting up Firebase
 
-TO BE CONTINUED
+One crictical aspect of our app is the database. For this part we have chosen to use Google's Firebase to store our user information and messages. Then our backend watches the database for changes to push to the client!
+
+1) Log into a Google account you wish to host the firebase on.
+2) Go to the [Firebase](https://firebase.google.com/) website.
+3) Click "Add a project" on the dashboard.
+4) Choose whatever project name you see fit.
+5) Disable Google Analytics when asked and then create the project!
+6) After the project is done being created, click the settings icon and the "Project settings".
+7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
+8) Type in a name for you app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
+9) Copy the firebase API keys into a `.env` file within your "server" folder within your codebase.
+
+Copy the codes below (not actually the ones below, the ones for your firebase):
+![Firebase1](/imgs/firebase1.png)
+
+And then format them into a `.env` files like this (no need for quotation marks):
+
+![Firebase2](/imgs/firebase2.png)
+
+
+10) Continue to the console and navigate to Build -> Firestore Database on the sidebar and click create database
+11) Select the nam5 server and continue.
+12) Start in test mode, click enable.
+13) Create two collections: "messages", "users". When prompted for documents/data to populate the collections, randomly enter in some pseudo-data. (Will not matter later on)
+
+### Continue on to `Developer tools` for more set up or
