@@ -1,1 +1,1 @@
-# Hello Vuepress
+# Earshot documentation
