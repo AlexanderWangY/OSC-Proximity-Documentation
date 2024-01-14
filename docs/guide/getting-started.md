@@ -160,6 +160,6 @@ And then format them into a `.env` files like this (no need for quotation marks)
 10) Continue to the console and navigate to Build -> Firestore Database on the sidebar and click create database
 11) Select the nam5 server and continue.
 12) Start in test mode, click enable.
-13) Create two collections: "messages", "users". When prompted for documents/data to populate the collections, randomly enter in some pseudo-data. (Will not matter later on)
+13) Create two collections: "messages" and "users". When prompted for documents/data to populate the collections, randomly enter in some pseudo-data (This will not matter later on).
 
 Now you're all done!!!!!!!!!!!!!!!!!!!!!!!!!!1111🎉 🎉 🎉 🎉 
