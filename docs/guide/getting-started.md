@@ -162,6 +162,4 @@ And then format them into a `.env` files like this (no need for quotation marks)
 12) Start in test mode, click enable.
 13) Create two collections: "messages", "users". When prompted for documents/data to populate the collections, randomly enter in some pseudo-data. (Will not matter later on)
 
-### Continue on to `Developer tools` for more set up or
-
-
+Now you're all done!!!!!!!!!!!!!!!!!!!!!!!!!!1111🎉 🎉 🎉 🎉 
