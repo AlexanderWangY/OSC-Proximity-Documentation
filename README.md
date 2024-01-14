@@ -1,4 +1,4 @@
-# Earshot documentation
+# Echologator documentation
 
 ## Contributing
 `git clone` a fork of this repository to edit it. Run `npm run docs:dev` to run the websever.
