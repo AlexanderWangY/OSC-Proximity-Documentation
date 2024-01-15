@@ -12,6 +12,11 @@ If you are using Windows, and would like to try using a terminal inside of linux
 
 We are excited to have you! :hugs:
 
+### Some definitions
+
+As a quick note, the **frontend** of our project is the React Native app we're developing, which individual **clients** (or users) will use. We sometimes may refer to this as the client-side portion of our app.
+The **backend** (sometimes refered to as the **server**) is what our frontend app uses to communicate to our database. It allows the creation, retrival, and searching of data to be done via http requests, as well as some other means you will learn about later.
+
 ## Prerequisites
 
 Although you do not need any prior experience to contribute to this open source project, a bit of experience with web development would help you **greatly** in contributing and understanding the code.
