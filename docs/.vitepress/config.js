@@ -4,27 +4,29 @@ const documentation = [
         collapsible: true,
         items: [
             { text: 'Getting Started', link: '/guide/getting-started'},
-            { text: 'Developer Tools', link: '/guide/dev-tools'},
+            { text: 'Optional Tools', link: '/guide/optional-tools'},
+            { text: 'Minimum Viaable Product', link: '/guide/mvp'},
         ]
     },
-    { 
-        text: 'Frontend Documentation',
-        collapsible: true,
-        items: [
-            { text: 'React Native', link: '/guide/react-native.md'}
-        ]
-    },
+    // {
+    //     text: 'Frontend Documentation',
+    //     collapsible: true,
+    //     items: [
+    //     ]
+    // },
     {
-        text: 'Backend Documentation',
+        text: 'Backend',
         collapsible: true,
         items: [
-            { text: 'Websocket Implementation', link: '/guide/websockets.md'}
+            { text: 'Introduction', link: '/guide/backend-introduction.md'},
+            { text: 'Routes', link: '/guide/backend-routes.md'},
+            { text: 'Websockets', link: '/guide/backend-websockets.md'}
         ]
     }
 ];
 
 export default {
-    title: 'OSC Proximity Chat',
+    title: 'Echologator',
     logo: '/imgs/cat.jpeg',
     themeConfig: {
         nav: [

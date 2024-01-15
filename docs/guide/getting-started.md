@@ -2,10 +2,12 @@
 
 ## Preface
 
-Depending on what operating system (Linux, Windows, etc.) you are running, your setup instructions will be slightly different. While using Linux is highly encouraged, it is not at all a requirement to work on this project.
-
+Depending on what operating system (Linux, Windows, etc.) you are running, your setup instructions will be slightly different. While using Linux is highly encouraged, it is not at all a requirement to work on this project. 
 :::warning
 Even if you only want to work on either the front or backend of this project, please keep in mind that both portions will need to be set-up and configured.
+:::
+:::info
+If you are using Windows, and would like to try using a terminal inside of linux without creating a virtual machine, you might want to look into installing [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
 :::
 
 We are excited to have you! :hugs:
@@ -71,7 +73,7 @@ Perfect :thumbsup:!
 
 Now we need to configure your environment variables for API calls to the backend server.
 
-Locate your `config_example.md` and copy the file into a new one named .env.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port as 3001 unless directed.
+Locate `config_example.md` and copy the file into a new one named .env.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port as 3001 unless directed.
 :::warning
 Do not delete `config_example.md`. If removed, and your commits are merged into the main repository, no one will have an example config to use. :(
 :::
@@ -147,9 +149,11 @@ One crictical aspect of our app is the database. For this part we have chosen to
 6) After the project is done being created, click the settings icon and the "Project settings".
 7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
 8) Type in a name for you app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
-9) Copy the firebase API keys into a `.env` file within your "server" folder within your codebase.
-
-Copy the codes below (not actually the ones below, the ones for your firebase):
+9) Before continuing, locate `config_example.md` and copy the file into a new one named `.env`. Note that we are still inside of the `server` directory.
+:::warning
+Do not delete `config_example.md`. If removed, and your commits are merged into the main repository, no one will have an example config to use. :(
+:::
+10) On firebase, now copy the codes below (not actually the ones below, the ones for your firebase):
 ![Firebase1](/imgs/firebase1.png)
 
 And then format them into a `.env` files like this (no need for quotation marks):
@@ -157,9 +161,11 @@ And then format them into a `.env` files like this (no need for quotation marks)
 ![Firebase2](/imgs/firebase2.png)
 
 
-10) Continue to the console and navigate to Build -> Firestore Database on the sidebar and click create database
+10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database.
 11) Select the nam5 server and continue.
 12) Start in test mode, click enable.
-13) Create two collections: "messages" and "users". When prompted for documents/data to populate the collections, randomly enter in some pseudo-data (This will not matter later on).
+13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
 
-Now you're all done!!!!!!!!!!!!!!!!!!!!!!!!!!1111🎉 🎉 🎉 🎉 
+Now your ready to start developing!!!!!!!!!!!!!!!!!!!!!!!!!!1111🎉 🎉 🎉 🎉 
+
+Next, feel free to read through other parts of the documentation that intrests you, our codebase, and assign yourself to an issue that you want to work on!
