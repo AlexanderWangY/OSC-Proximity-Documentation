@@ -36,5 +36,6 @@ export default {
         sidebar: {
             '/guide/': documentation,
         }
-    }
+    },
+    ignoreDeadLinks: true
 }

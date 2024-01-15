@@ -33,7 +33,7 @@ Many of these bullet points will become issues on our GitHub, if not already.
 
 Here is the design of our app, drafted in Figma.
 
-![DraftedDesign1](/imgs/AppViews.png)
+![DraftedDesign1](/imgs/View1.png)
 
 # Future ideas
 
