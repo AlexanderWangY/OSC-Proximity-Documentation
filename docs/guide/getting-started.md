@@ -14,7 +14,7 @@ We are excited to have you! :hugs:
 
 ### Some definitions
 
-As a quick note, the **frontend** of our project is the React Native app we're developing, which individual **clients** (or users) will use. We sometimes may refer to this as the client-side portion of our app.
+As a quick note, the **frontend** of our project is the React Native app we're developing, which individual **clients** (or users) will use. We may sometimes refer to this as the client-side portion of our app.
 The **backend** (sometimes referred to as the **server**) is what our frontend app uses to communicate to our database. It allows the creation, retrieval, and searching of data to be done via HTTP requests, as well as some other means you will learn about later.
 
 ## Prerequisites
@@ -32,7 +32,7 @@ Here are some recommended simple tutorials to get you caught up:
 You only need a basic understanding. Don't be afraid to ask teammates to help you understand the code better!
 :::
 
-However, the best way to learn (in Wang's experience) is always to read the code and ask questions. Contact a tech lead if you are having trouble and we will be more than glad to help you learn the tech stack!
+However, the best way to learn (in Wang's experience) is to always read the code and ask questions. Contact a tech lead if you are having trouble, and we will be more than glad to help you learn the tech stack!
 
 ### Prerequisites
 
@@ -80,7 +80,7 @@ Now we need to configure your environment variables for API calls to the backend
 
 Locate `config_example.md` and copy the file into a new one named .env.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port as 3001 unless directed.
 :::warning
-Do not delete `config_example.md`. If removed, and your commits are merged into the main repository, no one will have an example config to use. :(
+Do not delete `config_example.md`. If you delete it, then on the next time your commit is merged it will be gone for everyone else. :(
 :::
 
 Your `config_example.md` should look something like this:
@@ -103,7 +103,7 @@ You are now done setting up the front end for development!
 
 ### Backend
 
-From the project root directory, navigate to the `server` folder and install the dependencies
+From the project root directory, navigate to the `server` folder and install the dependencies.
 
 ```bash
 $ cd server
@@ -156,7 +156,7 @@ One critical aspect of our app is the database. For this part, we have chosen to
 8) Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
 9) Before continuing, locate `config_example.md` and copy the file into a new one named `.env`. Note that we are still inside the `server` directory.
 :::warning
-Do not delete `config_example.md`. If removed, and your commits are merged into the main repository, no one will have an example config to use. :(
+Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
 :::
 10) On Firebase, now copy the codes below (not actually the ones below, the ones for your Firebase):
 ![Firebase1](/imgs/firebase1.png)

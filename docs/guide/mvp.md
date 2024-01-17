@@ -42,7 +42,7 @@ These aren't our first priority, but could be if we complete our MVP. If you hav
 - Pings
     - Users can open a map. There will be pings placed throughout the map with an attatched message, which a user must walk to in order to read.
     - More than one user can add a message to any ping.
-    - Pings will contain an experation time.
+    - Pings will contain an expiration time.
 - Shadowbanning for moderation
 - GIF picker and support for messages containing images
     - Do not allow uploading of personal images
