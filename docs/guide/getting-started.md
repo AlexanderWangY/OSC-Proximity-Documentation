@@ -4,7 +4,7 @@
 
 Depending on what operating system (Linux, Windows, etc.) you are running, your setup instructions will be slightly different. While using Linux is highly encouraged, it is not at all a requirement to work on this project. 
 :::warning
-Even if you only want to work on either the front or backend of this project, please keep in mind that both portions will need to be setup and configured.
+Even if you only want to work on either the frontend or the backend portion of this project, please keep in mind that both portions will need to be configured.
 :::
 :::info
 If you are using Windows and would like to try using a terminal inside of Linux without creating a virtual machine, you might want to look into installing [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
@@ -97,13 +97,13 @@ $ npm start
 
 You should see a few different things load as well as a QR code, which you can scan with your phone to test the app. To use this, you will need to install [Expo Go](https://expo.dev/expo-go), but after that development will now be between your computer and your phone.
 
-You are now done setting up the frontend for development!
+You are now done setting up the front end for development!
 :tada: :tada: :tada: :tada:
 
 
 ### Backend
 
-From the project root directory, navigate into the `server` folder and install the dependencies
+From the project root directory, navigate to the `server` folder and install the dependencies
 
 ```bash
 $ cd server
