@@ -1,3 +1,5 @@
+import markdownItCheckbox from 'markdown-it-checkbox';
+
 const documentation = [
     { 
         text: 'Introduction',
@@ -37,5 +39,8 @@ export default {
             '/guide/': documentation,
         }
     },
-    ignoreDeadLinks: true
+    ignoreDeadLinks: true,
+    markdown: {
+        config: (md) => md.use(markdownItCheckbox)
+    }
 }
