@@ -5,7 +5,7 @@ const documentation = [
         items: [
             { text: 'Getting Started', link: '/guide/getting-started'},
             { text: 'Optional Tools', link: '/guide/optional-tools'},
-            { text: 'Minimum Viaable Product', link: '/guide/mvp'},
+            { text: 'Minimum Viable Product', link: '/guide/mvp'},
         ]
     },
     // {
@@ -20,7 +20,7 @@ const documentation = [
         items: [
             { text: 'Introduction', link: '/guide/backend-introduction.md'},
             { text: 'Routes', link: '/guide/backend-routes.md'},
-            { text: 'Websockets', link: '/guide/backend-websockets.md'}
+            { text: 'WebSockets', link: '/guide/backend-websockets.md'}
         ]
     }
 ];
