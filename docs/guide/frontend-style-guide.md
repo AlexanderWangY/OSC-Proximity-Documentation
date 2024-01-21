@@ -5,14 +5,15 @@ This style guide provides best practices and style conventions for writing React
 ## Table of Contents
 
 1. [General Guidelines](#general-guidelines)
-2. [Component Structure](#component-structure)
-3. [Naming Conventions](#naming-conventions)
-4. [State Management](#state-management)
-5. [TypeScript Usage](#typescript-usage)
+2. [Naming Conventions](#naming-conventions)
+3. [Components and Screens](#components-and-screens)
+4. [File and Folder Structures](#file-and-folder-structures)
+5. [Static Typing](#static-typing)
 6. [Styling](#styling)
-7. [Documentation](#documentation)
+7. [Documentation Expectations](#documentation-expectations)
+8. [Ending Notes](#ending-notes)
 
-## 1. General Guidelines
+## General Guidelines
 
 - Keep your code DRY (Don't Repeat Yourself).
 - Keep it modular. Each component or function should only do one or two things!
@@ -20,7 +21,7 @@ This style guide provides best practices and style conventions for writing React
 - Keep it consistent with the coding style defined below.
 - Use comments to clarify code, but do not comment obvious code.
 
-## 2. Naming Conventions
+## Naming Conventions
 
 ### 2.1 General
 
@@ -82,7 +83,7 @@ Interfaces are important to utilize and understand as you will be using them a l
     }
     ```
 
-## 3. Components and Screens
+## Components and Screens
 Keep component names short and straight to the point. The components with the `Screen` suffix are where the different pages are put together.
 
 - **Use Arrow Function Components:** Prefer to use the arrow function over the traditional function for making componenets
@@ -116,7 +117,7 @@ Keep component names short and straight to the point. The components with the `S
 - **Compile in the Screens**:
 Building each component and then linking them all up within themselves then importing into `Screen` files overcomplicates things! Assemble your components within the actual `Screen` files/components themselves!
 
-## 4. File and Folder Structures
+## File and Folder Structures
 
 A clean and simple folder structure is a key aspect of a less painful developing experience. Instead of importing components from all over the repository, we have a set structure to where and what each folder should be and what it should contain.
 
@@ -198,7 +199,7 @@ export const LoginButton : React.FC = () => {
 };
 ```
 
-## 5. Static Typing
+## Static Typing
 This may be a little weird to begin doing, especially if you are coming from a dynamically typed language like JavaScript. However, it is important to understand the benefits of static typing and how it can help you write less error-prone code.
 
 ### Declaring Types
@@ -264,7 +265,7 @@ const MyComponent : React.FC = () => {
 };
 ```
 
-## 6. Styling
+## Styling
 Currently we are using plain CSS for styling our components. We are using the [React Native StyleSheet](https://reactnative.dev/docs/stylesheet) to style our components. More libraries may be added in the future to make styling easier.
 
 ### Naming Conventions
@@ -305,7 +306,7 @@ Currently we are using plain CSS for styling our components. We are using the [R
     ```
     This is for increased responsiveness and scalability of the app. Also opt for using percentages and flexbox over hard-coded values.
 
-## 7. Documentation Expectations
+## Documentation Expectations
 Documentation is one of the most important aspects of a project. As an Open Source project, we want to make sure that our code is well documented and easy to understand. This will help us onboard new developers and make it easier for everyone to understand the codebase.
 
 - **Documenting New Code:** When you write new code, make sure to document it. This can be done by either adding comments to your code or by appending or adding new content to this website.
