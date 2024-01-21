@@ -10,12 +10,13 @@ const documentation = [
             { text: 'Minimum Viable Product', link: '/guide/mvp'},
         ]
     },
-    // {
-    //     text: 'Frontend Documentation',
-    //     collapsible: true,
-    //     items: [
-    //     ]
-    // },
+    {
+        text: 'Frontend Documentation',
+        collapsible: true,
+        items: [
+            { text: 'Frontend Style Guide', link: '/guide/frontend-style-guide.md'},
+        ]
+    },
     {
         text: 'Backend',
         collapsible: true,
