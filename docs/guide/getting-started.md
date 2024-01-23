@@ -170,7 +170,7 @@ And then format them into a `.env` files like this (no need for quotation marks)
 ![Firebase2](/imgs/firebase2.png)
 
 
-10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database.
+10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
 11) Select the nam5 server and continue.
 12) Start in test mode, click enable.
 13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
