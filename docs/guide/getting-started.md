@@ -4,24 +4,24 @@
 
 Depending on what operating system (Linux, Windows, etc.) you are running, your setup instructions will be slightly different. While using Linux is highly encouraged, it is not at all a requirement to work on this project. 
 :::warning
-Even if you only want to work on either the front or backend of this project, please keep in mind that both portions will need to be set-up and configured.
+Even if you only want to work on either the frontend or the backend portion of this project, please keep in mind that both portions will need to be configured.
 :::
 :::info
-If you are using Windows, and would like to try using a terminal inside of linux without creating a virtual machine, you might want to look into installing [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
+If you are using Windows and would like to try using a terminal inside of Linux without creating a virtual machine, you might want to look into installing [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
 :::
 
 We are excited to have you! :hugs:
 
 ### Some definitions
 
-As a quick note, the **frontend** of our project is the React Native app we're developing, which individual **clients** (or users) will use. We sometimes may refer to this as the client-side portion of our app.
-The **backend** (sometimes refered to as the **server**) is what our frontend app uses to communicate to our database. It allows the creation, retrival, and searching of data to be done via http requests, as well as some other means you will learn about later.
+As a quick note, the **frontend** of our project is the React Native app we're developing, which individual **clients** (or users) will use. We may sometimes refer to this as the client-side portion of our app.
+The **backend** (sometimes referred to as the **server**) is what our frontend app uses to communicate to our database. It allows the creation, retrieval, and searching of data to be done via HTTP requests, as well as some other means you will learn about later.
 
 ## Prerequisites
 
 Although you do not need any prior experience to contribute to this open source project, a bit of experience with web development would help you **greatly** in contributing and understanding the code.
 
-Here are some recommeneded simple tutorials to get you caught up:
+Here are some recommended simple tutorials to get you caught up:
 
 - **HTML/CSS:** [HTML & CSS Full Course - Beginner to Pro](https://www.youtube.com/watch?v=G3e-cpL7ofc)
 - **Javascript:** [JavaScript Full Course for Beginners](https://www.youtube.com/watch?v=EfAl9bwzVZk)
@@ -32,19 +32,19 @@ Here are some recommeneded simple tutorials to get you caught up:
 You only need a basic understanding. Don't be afraid to ask teammates to help you understand the code better!
 :::
 
-However, the best way to learn (in Wang's experience) is always to read the code and ask questions. Contact a tech lead if you are having trouble and we will be more than glad to help you learn the tech stack!
+However, the best way to learn (in Wang's experience) is to always read the code and ask questions. Contact a tech lead if you are having trouble, and we will be more than glad to help you learn the tech stack!
 
 ### Prerequisites
 
-First, ensure you have a stable version of [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed on your system (LTS or Long Term Release versions are prefered). If you use a package manager, check its wiki for any extra installation instructions.
+First, ensure you have a stable version of [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed on your system (LTS or Long Term Release versions are preferred). If you use a package manager, check its wiki for any extra installation instructions.
 
 :::tip
-If you run into problems running Node.js, you may want to install [Node Version Manager](https://github.com/nvm-sh/nvm) as an alternative. Setting this up can be slightly more in depth, but it is another option.
+If you run into problems running Node.js, you may want to install [Node Version Manager](https://github.com/nvm-sh/nvm) as an alternative. Setting this up can be slightly more in-depth, but it is another option.
 :::
 
 ### Branching and Cloning the Repository
 
-When contributing to this project, first [commit](https://github.com/git-guides/git-commit) changes into your personal repository that is [forked](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) from the main one.
+When contributing to this project, make sure to [commit](https://github.com/git-guides/git-commit) changes into your personal repository that is [forked](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) from the main one.
 
 Travel to our [Github repository](https://github.com/ufosc/OSC-Proximity-Chat-App) and create a new fork into your personal repositories.
 
@@ -84,7 +84,7 @@ Now we need to configure your environment variables for API calls to the backend
 
 Locate `config_example.md` and copy the file into a new one named .env.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port as 3001 unless directed.
 :::warning
-Do not delete `config_example.md`. If removed, and your commits are merged into the main repository, no one will have an example config to use. :(
+Do not delete `config_example.md`. If you delete it, then on the next time your commit is merged it will be gone for everyone else. :(
 :::
 
 Your `config_example.md` should look something like this:
@@ -101,13 +101,13 @@ $ npm start
 
 You should see a few different things load as well as a QR code, which you can scan with your phone to test the app. To use this, you will need to install [Expo Go](https://expo.dev/expo-go), but after that development will now be between your computer and your phone.
 
-You are now done setting up the frontend for development!
+You are now done setting up the front end for development!
 :tada: :tada: :tada: :tada:
 
 
 ### Backend
 
-From the project root directory, navigate into the `server` folder and install the dependencies
+From the project root directory, navigate to the `server` folder and install the dependencies.
 
 ```bash
 $ cd server
@@ -126,7 +126,7 @@ $ cd src
 
 #### Running the backend server
 
-Before we setup and configure Firebase, the database our backend will talk to, we will quickly step aside and learn how to run the backend server.
+Before we configure Firebase, the database our backend will talk to, we will quickly step aside and learn how to run the backend server.
 
 Since we are writing in TypeScript that will need to be compiled into JavaScript, periodically run `npx tsc` in a second terminal during development. Additionally, `npx tsc -w` will do this much more quickly and recompile on file changes.
 
@@ -140,41 +140,40 @@ $ npx tsc && npm start
 
 :::info
 The package [Nodemon]() is very useful for restarting the server on file changes.
-If you would like to use it, install it with `npm i -g nodemon`. Invoke this with `nodemon` and run in a seperate terminal as well.
+If you would like to use it, install it with `npm i -g nodemon`. Then you can run it in a separate terminal using the `nodemon` command.
 :::
 
-We are halfway done with setiing up the backend server! As previously mentioned, we now must set up and configure our database.
+We are halfway done with setting up the backend server! As previously mentioned, we now must set up and configure our database.
 
 
 ## Setting up and configuring Firebase
 
-One crictical aspect of our app is the database. For this part we have chosen to use Google's Firebase to store our user information and messages. Our backend neatly allows us to search and send database information using a easy-to-read-and-parse file format called [JSON](https://en.wikipedia.org/wiki/JSON).
+One critical aspect of our app is the database. For this part, we have chosen to use Google's Firebase to store our user information and messages. Our backend neatly allows us to search and send database information using a file format that is easy to read and parse called [JSON](https://en.wikipedia.org/wiki/JSON).
 
-1) Log into a Google account you wish to host the firebase on.
+1) Log into a Google account you wish to host the Firebase on.
 2) Go to the [Firebase](https://firebase.google.com/) website.
 3) Click "Add a project" on the dashboard.
 4) Choose whatever project name you see fit. Call it ProximityChatEchologatorEarshot if you're low on ideas (like us).
 5) Disable Google Analytics when asked, and then create the project
 6) After the project is done being created, click the settings icon and the "Project settings".
 7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
-8) Type in a name for you app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
-9) Before continuing, locate `config_example.md` and copy the file into a new one named `.env`. Note that we are still inside of the `server` directory.
+8) Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
+9) Before continuing, locate `config_example.md` and copy the file into a new one named `.env`. Note that we are still inside the `server` directory.
 :::warning
-Do not delete `config_example.md`. If removed, and your commits are merged into the main repository, no one will have an example config to use. :(
+Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
 :::
-10) On firebase, now copy the codes below (not actually the ones below, the ones for your firebase):
+10) On Firebase, now copy the codes below (not actually the ones below, the ones for your Firebase):
 ![Firebase1](/imgs/firebase1.png)
 
-And then format them into a `.env` files like this (no need for quotation marks):
+And then format them into a `.env` file like this (no need for quotation marks):
 
 ![Firebase2](/imgs/firebase2.png)
 
-
 10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
 11) Select the nam5 server and continue.
-12) Start in test mode, click enable.
+12) Start in test mode and click enable.
 13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
 
-Now your ready to start developing!!!!!!!!!!!!!!!!!!!!!!!!!!1111🎉 🎉 🎉 🎉 
+Now you are ready to start developing!!!!!!!!!!!!!!!!!!!!!!!!!!1111🎉 🎉 🎉 🎉 
 
-Next, feel free to read through other parts of the documentation that intrests you, our codebase, and assign yourself to an issue that you want to work on!
+Next, feel free to read through other parts of the documentation and codebase that interest you, and assign yourself to an issue that you want to work on!

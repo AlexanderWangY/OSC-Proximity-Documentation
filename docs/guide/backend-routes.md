@@ -2,10 +2,10 @@
 
 ## What are routes?
 
-An [API](https://en.wikipedia.org/wiki/API) route is a particular http endpoint (usually denoted by the `/` path placed at the end of a URL). 
+An [API](https://en.wikipedia.org/wiki/API) route is a particular HTTP endpoint (usually denoted by the `/` path placed at the end of a URL). 
 As our server's API is called from the client with an HTTP request, we can parse the route that it is searching for, perform the action which the client wants it to do, and return data accordingly.
 
-Furthermore, HTTP has different types of requests:
+Furthermore, HTTP has different types of [requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods:
 * GET - denotes that data should be returned
 * POST - denotes that data should be created
 * PUT - denotes that data should be updated
@@ -17,7 +17,7 @@ These types of requests are related to the more complicated REST principle for d
 
 While these requests are a general guide for how our server should respond to the client, we can also have each of these call the same route, and enact a different action. 
 
-Here is a non-specific example of how HTTP requests work in combination web servers.
+Here is a non-specific example of how HTTP requests work in combination with web servers.
 
 ![Express routing mechanism](/imgs/expressRoutingMechanism.jpg)
 
@@ -25,7 +25,7 @@ Here is a non-specific example of how HTTP requests work in combination web serv
 ## Routes
 
 :::warning
-Our current API has an outdated implementaion for sending and recieving message objects before we started converting to websockets. The below messages section is now deprecated.
+Our current API has an implementation for sending and receiving message objects that is now deprecated as we are shifting to the WebSockets implementation.
 :::
 
 ### Messages (deprecated)
@@ -63,7 +63,7 @@ Our current API has an outdated implementaion for sending and recieving message 
 
 **POST** /users
 
-* add a user docment to the Users collection in Firestore
+* add a user document to the Users collection in Firestore
 
 **PUT** /users?userId=\<userId\>&specificLat=\<specificLat\>&specificLon=\<specificLon\>
 
