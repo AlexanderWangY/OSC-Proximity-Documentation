@@ -49,7 +49,7 @@ When contributing to this project, first [commit](https://github.com/git-guides/
 Travel to our [Github repository](https://github.com/ufosc/OSC-Proximity-Chat-App) and create a new fork into your personal repositories.
 
 :::tip
-Make sure to give our repo a star too!
+Make sure to give our repo a star too! :star: :star: :star:
 :::
 
 ![Guide1](/imgs/docimg1.png)
