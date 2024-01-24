@@ -48,6 +48,10 @@ When contributing to this project, make sure to [commit](https://github.com/git-
 
 Travel to our [Github repository](https://github.com/ufosc/OSC-Proximity-Chat-App) and create a new fork into your personal repositories.
 
+:::tip
+Make sure to give our repo a star too! :star: :star: :star:
+:::
+
 ![Guide1](/imgs/docimg1.png)
 
 Then, copy your new forked repository's clone address and return to your terminal/bash.
@@ -165,8 +169,7 @@ And then format them into a `.env` file like this (no need for quotation marks):
 
 ![Firebase2](/imgs/firebase2.png)
 
-
-10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click Create Database.
+10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
 11) Select the nam5 server and continue.
 12) Start in test mode and click enable.
 13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
