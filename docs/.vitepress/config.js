@@ -15,6 +15,8 @@ const documentation = [
         collapsible: true,
         items: [
             { text: 'Frontend Style Guide', link: '/guide/frontend-style-guide.md'},
+            { text: 'Router Paths', link: '/guide/frontend-routing.md'},
+            { text: 'Services', link: '/guide/frontend-services.md'},
         ]
     },
     {
