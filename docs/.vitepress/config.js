@@ -24,8 +24,8 @@ const documentation = [
         collapsible: true,
         items: [
             { text: 'Introduction', link: '/guide/backend-introduction.md'},
-            { text: 'Routes', link: '/guide/backend-routes.md'},
-            { text: 'WebSockets', link: '/guide/backend-websockets.md'}
+            { text: 'REST API', link: '/guide/backend-restapi.md'},
+            { text: 'Websocket API', link: '/guide/backend-websockets.md'}
         ]
     }
 ];
