@@ -14,7 +14,7 @@ A clear description of many function parameters can be found in the [Firestore R
 
 ## Express.js
 
-[Express.js](https://expressjs.com/) is the framework we use to respond to HTTP requests sent from the client. More on this in the routes section.
+[Express.js](https://expressjs.com/) is the framework we use for our REST API, handling HTTP requests sent from clients. More on this in the [REST API](./backend-restapi.md) section.
 
 ## Directory structure
 
