@@ -67,6 +67,49 @@ $ git clone <paste your repository's address>
 $ cd <the newly created directory>
 ```
 
+## Setting Firebase (Database)
+
+Before we install the dependancies and run our client and server projects, we need to set up our database. For this part, we have chosen to use Google's Firebase to store our user information and messages. Our backend neatly allows us to search and send database information using a file format that is easy to read and parse called [JSON](https://en.wikipedia.org/wiki/JSON).
+
+1) Log into a Google account you wish to host the Firebase on.
+2) Go to the [Firebase](https://firebase.google.com/) website.
+3) Click "Add a project" on the dashboard.
+4) Choose whatever project name you see fit. Call it ProximityChatEchologatorEarshot if you're low on ideas (like us).
+5) Disable Google Analytics when asked, and then create the project
+6) After the project is done being created, click the settings icon and the "Project settings".
+7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
+8) Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
+9) Before continuing, navigate into the `/server` directory and locate `config_example.md`. **Copy** the file into a new one named `.env`.
+:::warning
+Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
+:::
+10) On Firebase, now copy the codes below (not actually the ones below, the ones for your Firebase):
+![Firebase1](/imgs/firebase1.png)
+
+And then format them into the `.env` file like this (no need for quotation marks):
+
+![Firebase2](/imgs/firebase2.png)
+
+10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
+11) Select the nam5 server and continue.
+12) Start in test mode and click enable.
+13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
+
+### Setting up Firebase Authentication
+14) From the project root directory, navigate to `/client`. Copy `config_example.md` into a file named `.env`, just like what we did in `/server`. Then, copy the same codes from the previous section into the `.env` file. Your `.env` file should look like this:
+:::warning
+Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
+:::
+![Fireauth1](/imgs/authenv.png)
+
+:::info
+The frontend `.env` looks different because the dotenv package is not available for React Native. Instead, we use react-native-dotenv.
+:::
+15) Navigate to the Firebase console and click on the Authentication tab on the left sidebar. Then, click on the "Set up sign-in method" button.
+16) Click on the "Email/Password" option and enable it.
+
+Now we are all done setting up our database!!
+
 ### Installing Dependencies
 
 ### Frontend
@@ -82,12 +125,12 @@ Perfect :thumbsup:!
 
 Now we need to configure your environment variables for API calls to the backend server.
 
-Locate `config_example.md` and copy the file into a new one named .env.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port as 3001 unless directed.
+Open the `.env` which you created earlier.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port the same unless directed.
 :::warning
-Do not delete `config_example.md`. If you delete it, then on the next time your commit is merged it will be gone for everyone else. :(
+Again, do not delete `config_example.md`. If you delete it, then on the next time your commit is merged it will be gone for everyone else. :(
 :::
 
-Your `config_example.md` should look something like this:
+Your `config_example.md` should now have something like this:
 
 ```config_example.md
 EXPO_PUBLIC_LOCALHOST_ADDRESS = <YOUR IPv4 ADDRESS>
@@ -126,8 +169,6 @@ $ cd src
 
 #### Running the backend server
 
-Before we configure Firebase, the database our backend will talk to, we will quickly step aside and learn how to run the backend server.
-
 Since we are writing in TypeScript that will need to be compiled into JavaScript, periodically run `npx tsc` in a second terminal during development. Additionally, `npx tsc -w` will do this much more quickly and recompile on file changes.
 
 To start the server, run `npm start`.
@@ -146,59 +187,8 @@ If you would like to use it, install it with `npm i -g nodemon`. Then you can ru
 We are halfway done with setting up the backend server! As previously mentioned, we now must set up and configure our database.
 
 
-## Setting Firebase (Database)
-
-One critical aspect of our app is the database. For this part, we have chosen to use Google's Firebase to store our user information and messages. Our backend neatly allows us to search and send database information using a file format that is easy to read and parse called [JSON](https://en.wikipedia.org/wiki/JSON).
-
-1) Log into a Google account you wish to host the Firebase on.
-2) Go to the [Firebase](https://firebase.google.com/) website.
-3) Click "Add a project" on the dashboard.
-4) Choose whatever project name you see fit. Call it ProximityChatEchologatorEarshot if you're low on ideas (like us).
-5) Disable Google Analytics when asked, and then create the project
-6) After the project is done being created, click the settings icon and the "Project settings".
-7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
-8) Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
-9) Before continuing, locate `config_example.md` and copy the file into a new one named `.env`. Note that we are still inside the `server` directory.
-:::warning
-Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
-:::
-10) On Firebase, now copy the codes below (not actually the ones below, the ones for your Firebase):
-![Firebase1](/imgs/firebase1.png)
-
-And then format them into a `.env` file like this (no need for quotation marks):
-
-![Firebase2](/imgs/firebase2.png)
-
-10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
-11) Select the nam5 server and continue.
-12) Start in test mode and click enable.
-13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
-
-## Setting up Firebase Authentication
-:::tip
-You can skip steps 1-8 if you have already set up Firebase for the database.
-:::
-1) Log into a Google account you wish to host the Firebase on.
-2) Go to the [Firebase](https://firebase.google.com/) website.
-3) Click "Add a project" on the dashboard.
-4) Choose whatever project name you see fit. Call it ProximityChatEchologatorEarshot if you're low on ideas (like us).
-5) Disable Google Analytics when asked, and then create the project
-6) After the project is done being created, click the settings icon and the "Project settings".
-7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
-8) Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
-9) Naviate to the root directory of the frontend which should be a folder called `client`. Make a new file called `.env` and copy the contents of `config_example.md` into it. Then, copy the same codes from the previous section into the `.env` file. Your `.env` file should look like this:
-:::warning
-Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
-:::
-![Fireauth1](/imgs/authenv.png)
-
-:::info
-The frontend `.env` looks different because the dotenv package is not available for React Native. Instead, we use react-native-dotenv.
-:::
-10) Navigate to the Firebase console and click on the Authentication tab on the left sidebar. Then, click on the "Set up sign-in method" button.
-11) Click on the "Email/Password" option and enable it.
 
 
-Now you are ready to start developing!🎉 🎉 🎉 🎉 
+### Now you are ready to start developing!🎉 🎉 🎉 🎉 
 
 Next, feel free to read through other parts of the documentation and codebase that interest you, and assign yourself to an issue that you want to work on!
