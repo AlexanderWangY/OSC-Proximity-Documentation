@@ -84,13 +84,13 @@ The following code snippet represents how the Login Screen will be rendered once
 
 The `TouchableWithoutFeedback`, `KeyboardAvoidingView`, `View` and `Text` sub-components used within Login Screen come from React Native, as you can see from the first import. 
 
-The others like `LogInEmailInput`, `LoginPasswordInput` and `LogInPasswordInput` are custom designed components that reside within the `Common` subdirectory of the `src/component` directory. 
+Others like `LogInEmailInput`, `LoginPasswordInput` and `LogInPasswordInput` are custom designed components that reside within the `Common` subdirectory of the `src/component` directory. 
 
 These have been built from React Native core components the same way `LogInScreen` has.
 
 ## React Native Props
 
-The properties passed to these components, referred to as Props in short form, can be found in the React Native docs as well. 
+The properties passed to these components, referred to as [Props](https://react.dev/learn/passing-props-to-a-component), can be found in the React Native docs as well. 
 
 The `style` props is a common one that is added to most components where you want to add styling using the React Native StyleSheet object. 
 
