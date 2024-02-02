@@ -14,6 +14,7 @@ const documentation = [
         text: 'Frontend Documentation',
         collapsible: true,
         items: [
+            { text: 'Walkthrough of A React Native Page', link: '/guide/frontend-tutorial.md'},
             { text: 'Frontend Style Guide', link: '/guide/frontend-style-guide.md'},
             { text: 'Router Paths', link: '/guide/frontend-routing.md'},
             { text: 'Services', link: '/guide/frontend-services.md'},
