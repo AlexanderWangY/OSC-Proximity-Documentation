@@ -33,10 +33,10 @@ Here is a non-specific example of how HTTP requests work in combination with web
 ## Routes
 
 ### Users (ConnectedUsers)
-**GET** /users?lat&lon&radius
+**GET `/users?lat&lon&radius`**
 * Return all users present within a radius of a geographic center point
 
-**POST** /users
+**POST `/users`**
 * Add a new user to the users collection in Firestore
 * Message body must contain:
   * displayName (string)
@@ -46,13 +46,13 @@ Here is a non-specific example of how HTTP requests work in combination with web
   * lon (number)
   * geohash (string)
 
-**PUT** /users?userId&toggleConnection=true
+**PUT `/users?userId&toggleConnection=true`**
 * Flips the value a user's isConnected (bool) attribute
 * Note: toggleConnection must be set to true
 
-**PUT** /users?userId&lat&lon
+**PUT `/users?userId&lat&lon`**
 * Update a user's location
 
-**DELETE** /users?userId
+**DELETE `/users?userId`**
 * Delete a user document
 
