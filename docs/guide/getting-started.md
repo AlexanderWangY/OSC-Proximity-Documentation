@@ -120,6 +120,9 @@ Navigate into the `client` folder and install the required dependencies using No
 $ cd client
 $ npm install
 ```
+:::info
+After running `npm install` you will likely get a warning that vulnerabilities were found. This warning can be safely ignored and auditing vulnerable packages is not necessary.
+:::
 
 Perfect :thumbsup:!
 
