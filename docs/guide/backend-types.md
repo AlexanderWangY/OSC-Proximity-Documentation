@@ -5,7 +5,7 @@ To implement functionality for users and messages, we have to organize informati
 As perviously mentioned, Firestore organizes *collections* of data (e.g. for messages) which contain *documents* (a single message containing location information, the user who created it, and the actual message itself, etc).
 Any type for users or messages should match how they are stored in Firebase. The Firebase collections that we use are shown below.
 
-:::Note
+:::info
 These collections are created automatically in Firestore when the server creates documents.
 :::
 
