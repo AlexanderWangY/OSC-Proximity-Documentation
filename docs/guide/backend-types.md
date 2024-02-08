@@ -2,50 +2,51 @@
 
 To implement functionality for users and messages, we have to organize information in our database.
 
-As perviously mentioned, Firestore organizes *collections* of data (e.g. for messages) which contain *documents* (a single message, containing location information, the user who created it, and the actual message itself).
-Any type for users or messages should match how their stored in firebase. The Firebase collections that we use are shown below.
+As perviously mentioned, Firestore organizes *collections* of data (e.g. for messages) which contain *documents* (a single message containing location information, the user who created it, and the actual message itself, etc).
+Any type for users or messages should match how they are stored in Firebase. The Firebase collections that we use are shown below.
 
-:::warning
-While the getting started guide only has you create two collections, these types have barely been implemented and won't affect any installation.
-Documentation will update to reflect these changes as these types are implemented.
+:::Note
+These collections are created automatically in Firestore when the server creates documents.
 :::
 
 ### Collection Auth (managed by Firebase Auth)
 - email 
 - password 
-- user UID
+- uid (**U**esr **ID**)
 - ...other Firebase authentication information
 
-### Collection UserSettings
-- **index**: user UID \<UID>
-- user UID \<UID>
+### Collection UserConfigs
+- **index**: \<UID>
+- uid \<UID>
 - isConnected \<boolean>
-- blacklisted UIDs \<array of UIDs>
 - lastConnectionTime \<Unix timestamp>
+- blacklisted UIDs \<array of UIDs>
 - moderationSettings:
   - muteTimeStart \<Unix timestamp>
   - muteTimeEnd \<Unix timestamp>
-  - isBanned \<boolean>
+  - banTimeStart \<Unix timestamp>
+  - banTimeEnd \<Unix timestamp>
+  - isPermaBanned \<boolean>
   - reason \<string>
 
 ### Collection ConnectedUsers 
-- **index**: user UID \<UID>
-- user UID \<UID>
+- **index**: uid \<UID>
+- uid \<UID>
 - socketId \<socket.id>
 - displayName \<string>
 - userIcon:
   - foregroundImage \<filepath>
   - backgroundImage \<filepath>
-- locationData:
+- location:
   - lat \<lat>
   - lon \<lon>
   - geohash \<geohash>
 
 ### Collection Messages
-- user UID \<UID>
+- uid \<UID>
 - msgId \<UUID>
 - msgContent \<string>
-- locationData:
+- location:
   - lat \<lat>
   - lon \<lon>
   - geohash \<geohash>
