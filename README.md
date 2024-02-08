@@ -13,4 +13,4 @@ When you are ready, make a pull request to the `master` branch.
 
 Thanks for all your help everyone! :star:
 
-Docs for Vitepress are available at https://vitepress.dev/guide/
+Docs for Vitepress are available [here](https://vitepress.dev/)
