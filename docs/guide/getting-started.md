@@ -93,7 +93,6 @@ And then format them into the `.env` file like this (no need for quotation marks
 10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
 11) Select the nam5 server and continue.
 12) Start in test mode and click enable.
-13) Create two collections: "messages" and "users". When prompted for data to populate the collections, randomly enter in some pseudo-data (this will not matter later on, this information is formatted by our server).
 
 ### Setting up Firebase Authentication
 14) From the project root directory, navigate to `/client`. Copy `config_example.md` into a file named `.env`, just like what we did in `/server`. Then, copy the same codes from the previous section into the `.env` file. Your `.env` file should look like this:
@@ -186,11 +185,6 @@ $ npx tsc && npm start
 The package [Nodemon]() is very useful for restarting the server on file changes.
 If you would like to use it, install it with `npm i -g nodemon`. Then you can run it in a separate terminal using the `nodemon` command.
 :::
-
-We are halfway done with setting up the backend server! As previously mentioned, we now must set up and configure our database.
-
-
-
 
 ### Now you are ready to start developing!🎉 🎉 🎉 🎉 
 
