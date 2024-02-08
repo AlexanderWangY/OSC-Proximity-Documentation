@@ -9,6 +9,8 @@ When making changes, `git checkout your-new-changes` to start a new branch and m
 
 When you are ready, make a pull request to the `master` branch.
 
+
+
 Thanks for all your help everyone! :star:
 
 Docs for Vitepress are available at https://vitepress.dev/guide/
