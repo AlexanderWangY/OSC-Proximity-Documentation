@@ -26,7 +26,7 @@ This is the entry point to the server, or the first file invoked when the server
 
 ### /actions
 
-This directory contains code for speaking directly to the database. We segment most things into files with *create*, *get*, *update*, and *delete* operations, following the [CRUD](https://en.wikipedia.org/wiki/Create%2C_read%2C_update_and_delete) acronym. The main reason for this segmentation is for readability purposes (we don't want an index file with thousands of lines of code for you to search through).
+This directory contains code for speaking directly to the database. We segment most things into files with _create_, _get_, _update_, and _delete_ operations, following the [CRUD](https://en.wikipedia.org/wiki/Create%2C_read%2C_update_and_delete) acronym. The main reason for this segmentation is for readability purposes (we don't want an index file with thousands of lines of code for you to search through).
 
 ### /types
 
