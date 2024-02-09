@@ -67,7 +67,7 @@ $ git clone <paste your repository's address>
 $ cd <the newly created directory>
 ```
 
-## Setting Firebase (Database)
+## Setting up Firebase (Database)
 
 Before we install the dependancies and run our client and server projects, we need to set up our database. For this part, we have chosen to use Google's Firebase to store our user information and messages. Our backend neatly allows us to search and send database information using a file format that is easy to read and parse called [JSON](https://en.wikipedia.org/wiki/JSON).
 
