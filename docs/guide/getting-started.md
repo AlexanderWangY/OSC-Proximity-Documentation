@@ -190,21 +190,25 @@ If you would like to use it, install it with `npm i -g nodemon`. Then you can ru
 
 Next, feel free to read through other parts of the documentation and codebase that interest you, and assign yourself to an issue that you want to work on!
 
-Here's how you can go about contributing to the documentation and the codebase:
-
 ## Creating a Pull Request
 
-A Pull Request refers to an object within GitHub that developers use to add incremental changes to a repository. A Pull Request consists of several commits that developer make in the respective branches of their own forks before they request for these changes to be added to one of the branches of the original repository.
+To contribute your changes to the documentation and the codebase, you would need to create a Pull Request.
+
+A Pull Request refers to an object within GitHub that developers use to add incremental changes to a repository. A Pull Request consists of several commits that developers make in the respective branches of their own forks before they request for these changes to be added to one of the branches of the original repository.
 
 Let's take the example of an issue that one of the developers, [Aadit](https://github.com/aaditkamat), has already worked upon previously:
 
 ![An example of a GitHub issue](/imgs/exampleissue.png)
 
-The documentation for this project is hosted through Vitepress pulling content from [Alex's repo](https://github.com/AlexanderWangY/OSC-Proximity-Documentation). So to work on this issue, you will have to create a fork of Alex's repo and make changes locally before you create a PR. You would follow a similar process to make changes to the codebase for the Echologator app itself.
+The documentation for this project is hosted through [Vitepress](https://vitepress.dev/) pulling content from [Alex's repo](https://github.com/AlexanderWangY/OSC-Proximity-Documentation). So to work on this issue, you will have to create a fork of Alex's repo and make changes locally before you create a PR. 
+
+You would follow a similar process to make changes to the codebase for the Echologator app.
 
 ![Forking the original repository](/imgs/createfork.png)
 
-Once you have forked the original repository, it is a good practice for you to create a new branch on your fork to start making the changes as per your issue. For example, Aadit has created a branch called `add-tutorial` on his fork to create a frontend tutorial that would resolve the issue. 
+Once you have forked the original repository, it is a good practice for you to create a new branch on your fork to start making the changes as per your issue. 
+
+For example, Aadit has created a branch called `add-tutorial` on his fork to create a frontend tutorial that would resolve the issue. 
 
 ![Creating a new branch on your fork](/imgs/createbranch.png)
 
@@ -212,5 +216,5 @@ Once you have made the changes and [pushed them](https://www.atlassian.com/git/t
 
 ![Opening a pull request](/imgs/openpullrequest.png)
 
-![Add title and description for your pull request](/imgs/openpullrequest2.png)
+![Adding title and description to your pull request](/imgs/openpullrequest2.png)
 
