@@ -14,6 +14,7 @@ const documentation = [
         text: 'Frontend Documentation',
         collapsible: true,
         items: [
+            { text: 'Walkthrough of A React Native Page', link: '/guide/frontend-tutorial.md'},
             { text: 'Frontend Style Guide', link: '/guide/frontend-style-guide.md'},
             { text: 'Router Paths', link: '/guide/frontend-routing.md'},
             { text: 'Services', link: '/guide/frontend-services.md'},
@@ -24,8 +25,9 @@ const documentation = [
         collapsible: true,
         items: [
             { text: 'Introduction', link: '/guide/backend-introduction.md'},
-            { text: 'Routes', link: '/guide/backend-routes.md'},
-            { text: 'WebSockets', link: '/guide/backend-websockets.md'}
+            { text: 'REST API', link: '/guide/backend-restapi.md'},
+            { text: 'Websocket API', link: '/guide/backend-websockets.md'},
+            { text: 'Firestore Collections & Types', link: '/guide/backend-types.md'}
         ]
     }
 ];

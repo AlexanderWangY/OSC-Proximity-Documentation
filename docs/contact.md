@@ -6,7 +6,7 @@ Contact us via email, or join the OSC Discord server: https://discord.gg/KwHuFbv
 | :------:  | :---:   | :--: |
 | Alexander | @alexwala| alexander.yisu.wang@outlook.com|
 | Phoenix | @phoen1x239 | pgutierrez2@ufl.edu |
-| Cameron | @ctxp| N/A |
+| Cameron | @ctxp| c@cjdd.me |
 
 We'll respond to you as soon as possible!
 
