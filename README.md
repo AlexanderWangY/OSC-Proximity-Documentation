@@ -1,6 +1,16 @@
 # Echologator documentation
 
 ## Contributing
-`git clone` a fork of this repository to edit it. Run `npm run docs:dev` to run the websever.
+`git clone` this repository into your local machine.
 
-Docs for Vitepress are available at https://vitepress.dev/guide/
+Then within your locally cloned repository, `npm install` to install all dependencies.
+
+When making changes, `git checkout your-new-changes` to start a new branch and make your changes there.
+
+When you are ready, make a pull request to the `master` branch.
+
+
+
+Thanks for all your help everyone! :star:
+
+Docs for Vitepress are available [here](https://vitepress.dev/)
