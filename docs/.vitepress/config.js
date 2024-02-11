@@ -6,6 +6,7 @@ const documentation = [
         collapsible: true,
         items: [
             { text: 'Getting Started', link: '/guide/getting-started'},
+            { text: 'Contributing', link: '/guide/contributing'},
             { text: 'Optional Tools', link: '/guide/optional-tools'},
             { text: 'Minimum Viable Product', link: '/guide/mvp'},
         ]
