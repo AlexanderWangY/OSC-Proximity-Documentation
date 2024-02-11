@@ -5,7 +5,7 @@ To contribute your changes to the documentation and the codebase, you would need
 ## What is a Pull Request?
 A Pull Request refers to an object within GitHub that developers use to add incremental changes to a repository. A Pull Request consists of several commits that developers make in the respective branches of their own forks before they request for these changes to be added to one of the branches of the original repository.
 
-## Demonstration with an example of an issue
+## Demonstration with an example issue
 Let's take the example of an issue that has already been resolved previously:
 
 ![An example of a GitHub issue](/imgs/exampleissue.png)
