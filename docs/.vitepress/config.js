@@ -1,4 +1,4 @@
-import markdownItCheckbox from 'markdown-it-checkbox';
+import markdownItCheckbox from "markdown-it-checkbox";
 
 const documentation = [
     { 
@@ -34,19 +34,19 @@ const documentation = [
 ];
 
 export default {
-    title: 'Echologator',
-    logo: '/imgs/cat.jpeg',
-    themeConfig: {
-        nav: [
-            { text: 'Guide', link: '/guide/getting-started'},
-            { text: 'Contacts', link: 'contact'}
-        ],
-        sidebar: {
-            '/guide/': documentation,
-        }
+  title: "Echologator",
+  logo: "/imgs/cat.jpeg",
+  themeConfig: {
+    nav: [
+      { text: "Guide", link: "/guide/getting-started" },
+      { text: "Contacts", link: "contact" },
+    ],
+    sidebar: {
+      "/guide/": documentation,
     },
-    ignoreDeadLinks: true,
-    markdown: {
-        config: (md) => md.use(markdownItCheckbox)
-    }
-}
+  },
+  ignoreDeadLinks: true,
+  markdown: {
+    config: (md) => md.use(markdownItCheckbox),
+  },
+};
