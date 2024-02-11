@@ -1,4 +1,4 @@
-# Creating a Pull Request
+# Contributing to Echologator
 
 To contribute your changes to the documentation and the codebase, you would need to create a Pull Request.
 
@@ -31,7 +31,7 @@ Once you have made the changes and pushed them to the new branch you have create
 
 ## Pushing local changes to GitHub fork
 
-You can push the changes made on your local branch - branch of the fork that you have cloned locally - to the branch that exists on GitHub - also known as the remote branch - using the `git push` command:
+You can push the changes made on your local branch (branch of the fork that you have cloned locally) to the branch that exists on GitHub ( also known as the remote branch) using the `git push` command:
 ```bash
 git push <remote> <branch> 
 ```
