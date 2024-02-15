@@ -31,6 +31,7 @@ const documentation = [
       { text: "Introduction", link: "/guide/backend-introduction.md" },
       { text: "REST API", link: "/guide/backend-restapi.md" },
       { text: "Websocket API", link: "/guide/backend-websockets.md" },
+      { text: 'Firestore Collections & Types', link: '/guide/backend-types.md'}
     ],
   },
 ];
