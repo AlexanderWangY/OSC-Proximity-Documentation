@@ -1,4 +1,4 @@
-# Frontend
+# Frontend (Mini) Tutorial
 
 The pages for the mobile application reside in the `src/app` folder. The main page that you first see once you start the application is based on the `_layout.tsx` file found in the `(home)` folder with routing handled using Stacks as described in [routing](./frontend-routing.md).
 
