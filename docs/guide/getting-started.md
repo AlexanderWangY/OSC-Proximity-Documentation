@@ -2,7 +2,7 @@
 
 ## Preface
 
-Depending on what operating system (Linux, Windows, etc.) you are running, your setup instructions will be slightly different. While using Linux is highly encouraged, it is not at all a requirement to work on this project. 
+Depending on what operating system (Linux, Windows, etc.) you are running, your setup instructions will be slightly different. While using Linux is highly encouraged, it is not at all a requirement to work on this project.
 :::warning
 Even if you only want to work on either the frontend or the backend portion of this project, please keep in mind that both portions will need to be configured.
 :::
@@ -67,49 +67,63 @@ $ git clone <paste your repository's address>
 $ cd <the newly created directory>
 ```
 
-## Setting up Firebase (Database)
+## Setting up Firebase
 
 Before we install the dependancies and run our client and server projects, we need to set up our database. For this part, we have chosen to use Google's Firebase to store our user information and messages. Our backend neatly allows us to search and send database information using a file format that is easy to read and parse called [JSON](https://en.wikipedia.org/wiki/JSON).
 
-1) Log into a Google account you wish to host the Firebase on.
-2) Go to the [Firebase](https://firebase.google.com/) website.
-3) Click "Add a project" on the dashboard.
-4) Choose whatever project name you see fit. Call it ProximityChatEchologatorEarshot if you're low on ideas (like us).
-5) Disable Google Analytics when asked, and then create the project
-6) After the project is done being created, click the settings icon and the "Project settings".
-7) Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
-8) Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
-9) Before continuing, navigate into the `/server` directory and locate `config_example.md`. **Copy** the file into a new one named `.env`.
-:::warning
-Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
+1. Log into a Google account you wish to host the Firebase on.
+2. Go to the [Firebase](https://firebase.google.com/) website.
+3. Click "Add a project" on the dashboard.
+4. Choose whatever project name you see fit. Call it ProximityChatEchologatorEarshot if you're low on ideas (like us).
+5. Disable Google Analytics when asked, and then create the project
+6. After the project is done being created, click the settings icon and the "Project settings".
+7. Underneath the "Your apps" section, click the Web Development option (Looks like `</>`).
+8. Type in a name for your app (at your discretion), keep "Firebase Hosting" unchecked and click "Register App".
+
+### Setting up Firebase Database
+
+Make sure you have already completed the previous steps in setting up firebase.
+
+In order to allow our backend to access firebase's database and set everything up, we need to activate Firebase's Firestore Database.
+
+1. Navigate to the Firestore Database tab on the left hand side of the Firebase console.
+2. Click get started and select `nam5` as the server. Then continue.
+3. Select start in `test mode`.
+4. Now, navigate back to the console screen. Select the **cog** wheel at the top left side. Next to `Project Overview`. Click `Project Settings`.
+5. Navigate to the `Service Accounts` tab.
+6. Click `Generate a new private key`. And then `Generate key`
+7. It should start a download for a `json` file. Rename it `firebase-secret.json` and save into the `/server` folder in the project directory.
+
+::: warning IMPORTANT
+Make sure to also copy the contents of `/server/config_example.md` into a file called `.env` inside `/server/` that you make yourself! DON'T DELETE `config_example.md`
 :::
-10) On Firebase, now copy the codes below (not actually the ones below, the ones for your Firebase):
-![Firebase1](/imgs/firebase1.png)
 
-And then format them into the `.env` file like this (no need for quotation marks):
-
-![Firebase2](/imgs/firebase2.png)
-
-10) Continue to the Firebase console and navigate to Build > Firestore Database on the sidebar, and click create database. Expand the sidebar if you don't see these titles.
-11) Select the nam5 server and continue.
-12) Start in test mode and click enable.
+After you complete these steps, your backend should now be able to access your database and also authorize JWT tokens from the client.
 
 ### Setting up Firebase Authentication
-14) From the project root directory, navigate to `/client`. Copy `config_example.md` into a file named `.env`, just like what we did in `/server`. Then, copy the same codes from the previous section into the `.env` file. Your `.env` file should look like this:
-:::warning
-Do not delete `config_example.md`. Again, don't remove this config example either for the sake of others!!!
-:::
+
+We also need to use Firebase's web modular API to handle authentication on the client side (the mobile app).
+
+1. In your `./client` folder you should see a file called `config_example.md`. Copy the contents of that file into a file you make called `.env` inside the `./client` directory.
+2. From your firebase project's main console, navigate to the **cog** on the top left next to `Project Overview`. Select `Project Settings`.
+3. Navigate to the `General` tab (should be the default tab) and scroll down until you see app keys. Should look something like this:
+
+![Fireauthkeys](/imgs/firebasekeys.png)
+
+4. Copy those keys (without the quotation marks) into their respective variables in the `.env` file you just created. After you are done it should look something like this:
+
 ![Fireauth1](/imgs/authenv.png)
 
-:::info
-The frontend `.env` looks different because the dotenv package is not available for React Native. Instead, we use react-native-dotenv.
+:::warning
+Do not delete `config_example.md`.
 :::
-15) Navigate to the Firebase console and click on the Authentication tab on the left sidebar. Then, click on the "Set up sign-in method" button.
-16) Click on the "Email/Password" option and enable it.
+
+4.  Navigate to the Firebase console and click on the Authentication tab on the left sidebar. Then, click on the "Set up sign-in method" button.
+5.  Click on the "Email/Password" option and enable it.
 
 Now we are all done setting up our database!!
 
-### Installing Dependencies
+## Installing Dependencies
 
 ### Frontend
 
@@ -119,36 +133,25 @@ Navigate into the `client` folder and install the required dependencies using No
 $ cd client
 $ npm install
 ```
+
 :::info
 After running `npm install` you will likely get a warning that vulnerabilities were found. This warning can be safely ignored and auditing vulnerable packages is not necessary.
 :::
 
 Perfect :thumbsup:!
 
-Now we need to configure your environment variables for API calls to the backend server.
-
-Open the `.env` which you created earlier.  Append your machine's [local (not public or global) IPv4 address](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) after the equals sign without quotes. Leave the port the same unless directed.
-:::warning
-Again, do not delete `config_example.md`. If you delete it, then on the next time your commit is merged it will be gone for everyone else. :(
-:::
-
-Your `config_example.md` should now have something like this:
-
-```config_example.md
-EXPO_PUBLIC_LOCALHOST_ADDRESS = <YOUR IPv4 ADDRESS>
-```
-
-Run `npm start` to create a local running test of the mobile app.
+Now, run:
 
 ```bash
 $ npm start
 ```
 
-You should see a few different things load as well as a QR code, which you can scan with your phone to test the app. To use this, you will need to install [Expo Go](https://expo.dev/expo-go), but after that development will now be between your computer and your phone.
+It should bundle the app and show you a QR code. Above the QR code there should be an ip that looks like `http://xx.xx.xxx.xx:8080` or something similar. Copy the IP (not the :8000 or the http://) and paste the into `EXPO_IP` in your `.env` file. You will have to do this step everytime you launch between coding sessions (think 3-4 hours without coding).
+
+Scan the QR code with your phone and you should be prompted to download Expo Go and follow the steps. Then it should run in your testing environemtn (your phone).
 
 You are now done setting up the front end for development!
 :tada: :tada: :tada: :tada:
-
 
 ### Backend
 
@@ -186,6 +189,6 @@ The package [Nodemon]() is very useful for restarting the server on file changes
 If you would like to use it, install it with `npm i -g nodemon`. Then you can run it in a separate terminal using the `nodemon` command.
 :::
 
-### Now you are ready to start developing!🎉 🎉 🎉 🎉 
+### Now you are ready to start developing!🎉 🎉 🎉 🎉
 
 Next, feel free to read through other parts of the documentation and codebase that interest you, and assign yourself to an issue that you want to work on!
