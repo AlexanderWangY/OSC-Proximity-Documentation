@@ -15,22 +15,30 @@ const documentation = [
         text: 'Frontend Documentation',
         collapsible: true,
         items: [
-            { text: 'Walkthrough of A React Native Page', link: '/guide/frontend-tutorial.md'},
-            { text: 'Frontend Style Guide', link: '/guide/frontend-style-guide.md'},
-            { text: 'Router Paths', link: '/guide/frontend-routing.md'},
-            { text: 'Services', link: '/guide/frontend-services.md'},
+            { text: 'React Native Page Tutorial', link: '/guide/frontend/frontend-tutorial.md'},
+            { text: 'Frontend Style Guide', link: '/guide/frontend/frontend-style-guide.md'},
+            { text: 'Router Paths', link: '/guide/frontend/frontend-routing.md'},
+            { text: 'Services', link: '/guide/frontend/frontend-services.md'},
         ]
     },
     {
         text: 'Backend',
         collapsible: true,
         items: [
-            { text: 'Introduction', link: '/guide/backend-introduction.md'},
-            { text: 'REST API', link: '/guide/backend-restapi.md'},
-            { text: 'Websocket API', link: '/guide/backend-websockets.md'},
-            { text: 'Firestore Collections & Types', link: '/guide/backend-types.md'}
+            { text: 'Introduction', link: '/guide/backend/backend-introduction.md'},
+            { text: 'REST API', link: '/guide/backend/backend-restapi.md'},
+            { text: 'Websocket API', link: '/guide/backend/backend-websockets.md'},
+            { text: 'Firestore Collections & Types', link: '/guide/backend/backend-types.md'}
         ]
-    }
+    },
+    {
+      text: 'Miscellaneous',
+      collapsible: true,
+      items: [
+          { text: 'FAQ', link: '/guide/misc/faq.md'},
+          { text: 'Troubleshooting', link: '/guide/misc/troubleshooting.md'},
+      ]
+  }
 ];
 
 export default {
