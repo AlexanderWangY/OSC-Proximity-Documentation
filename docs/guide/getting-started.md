@@ -92,7 +92,7 @@ In order to allow our backend to access firebase's database and set everything u
 4. Now, navigate back to the console screen. Select the **cog** wheel at the top left side. Next to `Project Overview`. Click `Project Settings`.
 5. Navigate to the `Service Accounts` tab.
 6. Click `Generate a new private key`. And then `Generate key`
-7. It should start a download for a `json` file. Rename it `firebase-secret.json` and save into the `/server` folder in the project directory.
+7. It should start a download for a `json` file. Rename it `firebase-secrets.json` and save into the `/server` folder in the project directory.
 
 ::: warning IMPORTANT
 Make sure to also copy the contents of `/server/config_example.md` into a file called `.env` inside `/server/` that you make yourself! DON'T DELETE `config_example.md`
