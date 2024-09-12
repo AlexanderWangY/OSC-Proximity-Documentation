@@ -23,8 +23,11 @@ Make sure you have the correct api key in your `.env` file. Also, you can try to
 #### - **Not connecting to backend**:
 
 Make sure the `EXPO_IP` in your `client/.env` file is up to date with your current Expo Go session. If you are unsure what that means ask a tech lead!
+:::info
+Immediately after making changes to your `client/.env` file, you may need to run `npx expo start -c` instead of `npm start` to clear the cache and load the changes.
+:::
 
-#### - **Other Authentication Issues**:
+#### - **Other Authentication Issues**:q
 
 Make sure that you have enabled authentication in your firebase project. You can do this by going to the firebase console and enabling the authentication feature. Make sure to enable it for email and password.
 
