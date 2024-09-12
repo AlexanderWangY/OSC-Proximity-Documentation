@@ -148,8 +148,10 @@ $ npm start
 
 It should bundle the app and show you a QR code. Above the QR code there should be an ip that looks like `http://xx.xx.xxx.xx:8080` or something similar. Copy the IP (not the :8000 or the http://) and paste the into `EXPO_IP` in your `.env` file. You will have to do this step everytime you launch between coding sessions (think 3-4 hours without coding).
 
-Scan the QR code with your phone and you should be prompted to download Expo Go and follow the steps. Then it should run in your testing environemtn (your phone).
-
+Download the Expo Go app to your phone and scan the QR code. Then it should run in your testing environment (your phone).
+:::info
+If you scan the QR code and it says "no usable data found" you probably don't have the app installed yet.
+:::
 You are now done setting up the front end for development!
 :tada: :tada: :tada: :tada:
 
